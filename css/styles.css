@@ -3,7 +3,10 @@ body {
     color: #444;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
+    background-image: url('images/BackgroundImage.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 header {
