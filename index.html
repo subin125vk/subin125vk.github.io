@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subin Kurian Varghese - Java Developer</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
+    "></script>
 
 </head>
 
@@ -20,7 +21,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
             <h1>Hi, I'm Subin Kurian Varghese</h1>
@@ -60,64 +60,66 @@
         </div>
     </section>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-container">
-      <!-- MRetail Project -->
-      <div class="project-card">
-          <h3>MRetail - Retail Management System</h3>
-          <p class="brief-desc">Multi-channel inventory management solution for retail businesses.</p>
-          <div class="project-details">
-              <p><strong>MRetail</strong> is an enterprise-grade, user-friendly retail management solution...</p>
-              <ul>
-                  <li>Affordable solution for businesses of all sizes.</li>
-                  <li>Microservices-based and cloud-enabled architecture.</li>
-              </ul>
-              <!-- <a href="https://www.m-retail.in" target="_blank">Learn More</a> -->
-          </div>
-      </div>
-
-      <!-- Prison Management System Project -->
-      <div class="project-card">
-          <h3>Prison Management System</h3>
-          <p class="brief-desc">Manage inmate records and logs for secure and efficient operations.</p>
-          <div class="project-details">
-              <p><strong>Prison Management System</strong> is designed to manage inmate records...</p>
-              <ul>
-                  <li>Track parole, visitor logs, and disciplinary actions.</li>
-              </ul>
-              <a href="https://github.com/subin125vk/Prison_Management_System.git" target="_blank">View Project Repo</a>
-          </div>
-      </div>
-
-      <!-- TODO App Project -->
-      <div class="project-card">
-          <h3>TODO App</h3>
-          <p class="brief-desc">Task management app with user authentication and secure login.</p>
-          <div class="project-details">
-              <p><strong>TODO App</strong> is a task management tool with user authentication...</p>
-              <ul>
-                  <li>User authentication and task management.</li>
-              </ul>
-              <a href="https://github.com/subin125vk/todo-app.git" target="_blank">View Project Repo</a>
-          </div>
-      </div>
-  </div>
-</section>
-
-
-
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card" onclick="toggleDetails(this)">
+                <div class="project-summary">
+                    <h3>MRetail - Retail Management System</h3>
+                    <!-- <a href="https://github.com/subin125vk/MRetail.git" target="_blank" class="repo-link">View Repo</a> -->
+                </div>
+                <div class="project-details">
+                    <p><strong>MRetail</strong> is a retail management system with microservices architecture, integrated with WooCommerce, inventory tracking, and reporting dashboards.</p>
+                    <ul>
+                        <li>Technologies: Java, Spring Boot, Hibernate, Grafana, ELK Stack.</li>
+                        <li>Features: Inventory management, order tracking, cloud deployment.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Project Card 2 -->
+            <div class="project-card" onclick="toggleDetails(this)">
+                <div class="project-summary">
+                    <h3>Prison Management System</h3>
+                    <a href="https://github.com/subin125vk/Prison_Management_System.git" target="_blank" class="repo-link">View Repo</a>
+                </div>
+                <div class="project-details">
+                    <p><strong>Prison Management System</strong> centralizes inmate records, tracks parole details, and manages visitor logs with role-based security.</p>
+                    <ul>
+                        <li>Technologies: Java, JSP, Hibernate, MySQL.</li>
+                        <li>Features: Secure login, parole tracking, visitor logs.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Project Card 3 -->
+            <div class="project-card" onclick="toggleDetails(this)">
+                <div class="project-summary">
+                    <h3>Project Management App</h3>
+                    <a href="https://github.com/subin125vk/Project_Management_App.git" target="_blank" class="repo-link">View Repo</a>
+                </div>
+                <div class="project-details">
+                    <p><strong>Project Management App</strong> simplifies task management with role-based authentication and real-time collaboration tools.</p>
+                    <ul>
+                        <li>Technologies: Java Spring Boot, Spring Security, React, MySQL.</li>
+                        <li>Features: Task creation/editing, secure authentication, responsive design.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" name="from_name" placeholder="Your Name" required />
+            <input type="email" name="to_name" placeholder="Recipient Name" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
+        
     </section>
 
     <footer>
